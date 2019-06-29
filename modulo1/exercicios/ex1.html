@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myFunction(endereco) {
+            return "O usuário mora em " +
+                endereco.cidade +
+                "/" + endereco.uf +
+                ", no bairro " + endereco.bairro +
+                ", na rua " + endereco.rua +
+                " com n " + endereco.numero + ".<br>";
+        }
+
+        var endereco_mateus = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        }
+        var endereco_cels = {
+            rua: "Rua Gov Pedro Ivo",
+            numero: 73,
+            bairro: "Jd Eldorado",
+            cidade: "Palhoça",
+            uf: "SC"
+        }
+        document.write(myFunction(endereco_mateus));
+        document.write(myFunction(endereco_cels));
+    </script>
+</body>
+
+</html>

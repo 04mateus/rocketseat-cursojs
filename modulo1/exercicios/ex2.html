@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pares</title>
+</head>
+
+<body>
+    <script>
+        function par(i, f) {
+            var pares = "Números pares = ";
+
+            for (; i <= f; i++) {
+                if (i % 2 == 0) {
+                    pares = pares + i + ", ";
+                }
+            }
+            return pares + "<br>";
+        }
+
+        var resultado = par(10, 20);
+        document.write(resultado);
+
+        var resultado = par(15, 30);
+        document.write(resultado);
+    </script>
+</body>
+
+</html>
